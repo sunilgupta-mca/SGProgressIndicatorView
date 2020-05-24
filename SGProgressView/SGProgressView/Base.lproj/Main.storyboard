@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SGProgressView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npp-P9-5Ux">
+                                <rect key="frame" x="110" y="64" width="100" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Vlx-Kh-KDE"/>
+                                </constraints>
+                                <state key="normal" title="Show Loader"/>
+                                <connections>
+                                    <action selector="onTapShowLoader:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BWa-ND-hxw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zY2-SS-beQ">
+                                <rect key="frame" x="60" y="134" width="200" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="pWu-XI-EfK"/>
+                                </constraints>
+                                <state key="normal" title="Show Loader with Message"/>
+                                <connections>
+                                    <action selector="onTapShowLoaderWithMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OLd-BP-3YQ"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="az6-ZO-Jvc">
+                                <rect key="frame" x="40" y="204" width="240" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aZ-kl-xIm">
+                                        <rect key="frame" x="99" y="10" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0aZ-kl-xIm" firstAttribute="top" secondItem="az6-ZO-Jvc" secondAttribute="top" constant="10" id="6G4-I2-jOp"/>
+                                    <constraint firstItem="0aZ-kl-xIm" firstAttribute="centerX" secondItem="az6-ZO-Jvc" secondAttribute="centerX" id="Qkb-xf-9P8"/>
+                                    <constraint firstAttribute="height" constant="120" id="VuV-hQ-WvS"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUS-hV-yB1">
+                                <rect key="frame" x="80" y="364" width="160" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="QpO-jU-Tf8"/>
+                                </constraints>
+                                <state key="normal" title="Show Loader on View"/>
+                                <connections>
+                                    <action selector="onTapShowLoaderOnView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6k0-qJ-j2W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Npp-P9-5Ux" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5rO-Mf-ihJ"/>
+                            <constraint firstItem="cUS-hV-yB1" firstAttribute="top" secondItem="az6-ZO-Jvc" secondAttribute="bottom" constant="40" id="KOh-LG-ZtN"/>
+                            <constraint firstItem="Npp-P9-5Ux" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="NLo-Lc-jFV"/>
+                            <constraint firstItem="az6-ZO-Jvc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="bi7-gW-sbs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="az6-ZO-Jvc" secondAttribute="trailing" constant="40" id="gWI-a4-K5q"/>
+                            <constraint firstItem="cUS-hV-yB1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jZ1-NH-YA5"/>
+                            <constraint firstItem="zY2-SS-beQ" firstAttribute="top" secondItem="Npp-P9-5Ux" secondAttribute="bottom" constant="40" id="wDR-oA-OBY"/>
+                            <constraint firstItem="zY2-SS-beQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xqT-FO-NYG"/>
+                            <constraint firstItem="az6-ZO-Jvc" firstAttribute="top" secondItem="zY2-SS-beQ" secondAttribute="bottom" constant="40" id="yPA-UX-UCn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dummyView" destination="az6-ZO-Jvc" id="8dl-1H-TK6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="130"/>
+        </scene>
+    </scenes>
+</document>
