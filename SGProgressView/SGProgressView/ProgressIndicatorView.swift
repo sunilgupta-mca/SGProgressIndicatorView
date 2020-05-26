@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ProgressIndicatorView: UIView {
+class ProgressIndicatorView {
+    // MARK: -Initlization method
+    private init() { }
+    
     // MARK: - Enumuration declaration
     /*!
      @typedef LoaderViewTags
